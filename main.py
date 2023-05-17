@@ -10,42 +10,42 @@ class GachaGame:
             {"name": "2", "rarity": "Common", "probability": 0.6},
             {"name": "3", "rarity": "Uncommon", "probability": 0.3},
             {"name": "4", "rarity": "Uncommon", "probability": 0.3},
-            {"name": "5", "rarity": "Rare", "probability": 0.1}
+            {"name": "5", "rarity": "Rare", "probability": 0.1},
             {"name": "6", "rarity": "Common", "probability": 0.6},
             {"name": "7", "rarity": "Common", "probability": 0.6},
             {"name": "8", "rarity": "Uncommon", "probability": 0.3},
             {"name": "9", "rarity": "Uncommon", "probability": 0.3},
-            {"name": "10", "rarity": "Rare", "probability": 0.1}
+            {"name": "10", "rarity": "Rare", "probability": 0.1},
             {"name": "11", "rarity": "Common", "probability": 0.6},
             {"name": "12", "rarity": "Common", "probability": 0.6},
             {"name": "13", "rarity": "Uncommon", "probability": 0.3},
             {"name": "14", "rarity": "Uncommon", "probability": 0.3},
-            {"name": "15", "rarity": "Rare", "probability": 0.1}
+            {"name": "15", "rarity": "Rare", "probability": 0.1},
             {"name": "16", "rarity": "Common", "probability": 0.6},
             {"name": "17", "rarity": "Common", "probability": 0.6},
             {"name": "18", "rarity": "Uncommon", "probability": 0.3},
             {"name": "19", "rarity": "Uncommon", "probability": 0.3},
-            {"name": "20", "rarity": "Rare", "probability": 0.1}
+            {"name": "20", "rarity": "Rare", "probability": 0.1},
             {"name": "22", "rarity": "Common", "probability": 0.6},
             {"name": "23", "rarity": "Common", "probability": 0.6},
             {"name": "24", "rarity": "Uncommon", "probability": 0.3},
             {"name": "25", "rarity": "Uncommon", "probability": 0.3},
-            {"name": "26", "rarity": "Rare", "probability": 0.1}
+            {"name": "26", "rarity": "Rare", "probability": 0.1},
             {"name": "27", "rarity": "Common", "probability": 0.6},
             {"name": "28", "rarity": "Common", "probability": 0.6},
             {"name": "29", "rarity": "Uncommon", "probability": 0.3},
             {"name": "30", "rarity": "Uncommon", "probability": 0.3},
-            {"name": "31", "rarity": "Rare", "probability": 0.1}
+            {"name": "31", "rarity": "Rare", "probability": 0.1},
             {"name": "32", "rarity": "Common", "probability": 0.6},
             {"name": "33", "rarity": "Common", "probability": 0.6},
             {"name": "34", "rarity": "Uncommon", "probability": 0.3},
             {"name": "35", "rarity": "Uncommon", "probability": 0.3},
-            {"name": "36", "rarity": "Rare", "probability": 0.1}
+            {"name": "36", "rarity": "Rare", "probability": 0.1},
             {"name": "37", "rarity": "Common", "probability": 0.6},
             {"name": "38", "rarity": "Common", "probability": 0.6},
             {"name": "39", "rarity": "Uncommon", "probability": 0.3},
-            {"name": "40", "rarity": "Uncommon", "probability": 0.3},
-        ]
+            {"name": "40", "rarity": "Uncommon", "probability": 0.3}
+            ]
         self.pity_counter = 0
         self.pity_threshold = 50
 
