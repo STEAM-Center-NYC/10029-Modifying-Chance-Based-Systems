@@ -59,19 +59,19 @@ class GachaGame:
             {"name": "52", "rarity": "Exotic", "probability": 0.2},
             {"name": "53", "rarity": "Exotic", "probability": 0.2},
             {"name": "54", "rarity": "Exotic", "probability": 0.2},
-            {"name": "55", "rarity": "Legendary", "probability": 0.01},
-            {"name": "56", "rarity": "Legendary", "probability": 0.01},
-            {"name": "57", "rarity": "Legendary", "probability": 0.01},
-            {"name": "58", "rarity": "Legendary", "probability": 0.01},
-            {"name": "59", "rarity": "Legendary", "probability": 0.01},
-            {"name": "60", "rarity": "Legendary", "probability": 0.01},
-            {"name": "61", "rarity": "Legendary", "probability": 0.01},
-            {"name": "62", "rarity": "Legendary", "probability": 0.01},
-            {"name": "63", "rarity": "Legendary", "probability": 0.01},
-            {"name": "64", "rarity": "Legendary", "probability": 0.01},
-            {"name": "65", "rarity": "Legendary", "probability": 0.01},
-            {"name": "66", "rarity": "Legendary", "probability": 0.01},
-            {"name": "67", "rarity": "Legendary", "probability": 0.01}
+            {"name": "55", "rarity": "Legendary", "probability": 0.1},
+            {"name": "56", "rarity": "Legendary", "probability": 0.1},
+            {"name": "57", "rarity": "Legendary", "probability": 0.1},
+            {"name": "58", "rarity": "Legendary", "probability": 0.1},
+            {"name": "59", "rarity": "Legendary", "probability": 0.1},
+            {"name": "60", "rarity": "Legendary", "probability": 0.1},
+            {"name": "61", "rarity": "Legendary", "probability": 0.1},
+            {"name": "62", "rarity": "Legendary", "probability": 0.1},
+            {"name": "63", "rarity": "Legendary", "probability": 0.1},
+            {"name": "64", "rarity": "Legendary", "probability": 0.1},
+            {"name": "65", "rarity": "Legendary", "probability": 0.1},
+            {"name": "66", "rarity": "Legendary", "probability": 0.1},
+            {"name": "67", "rarity": "Legendary", "probability": 0.1}
             ]
         self.pity_counter = 0
         self.pity_threshold = 50
