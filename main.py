@@ -1,6 +1,3 @@
-print("Welcome to the GACHA SIMULATOR where you can experience the chance based system firsthand.")
-#not called Gacha Simulator, temporary placeholder until better name is found.
-
 import random
 
 class GachaGame:
@@ -74,7 +71,10 @@ class GachaGame:
             {"name": "67", "rarity": "Legendary", "probability": 0.1}
             ]
         self.pity_counter = 0
-        self.pity_threshold = 50
+        self.pity_threshold = 5
+        self.currency_balance = 0
+        self.currency_price = 10
+        self.bank_balance = 500
 
     def pull(self):
         if self.pity_counter >= self.pity_threshold:
@@ -85,19 +85,50 @@ class GachaGame:
             item = random.choices(self.pool, weights=probabilities)[0]["name"]
             self.pity_counter += 1
 
-        return item
+        self.currency_balance += 1  # Earn pity point with each pull
+        return item["name"], item["rarity"]
+
+    def purchase_currency(self, amount):
+        cost = amount * self.currency_price
+        self.bank_balance -= cost
+        self.currency_balance += amount
+        print(f"You purchased {amount} coins for a total cost of {cost}.")
+
+    def play_game(self):
+        print("Welcome to the GACHA SIMULATOR where you can experience the chance based system firsthand.")
+        while True:
+            choice = input("Enter '1x' for a single pull, '10x' for a 10 pull, 'buy' to purchase coins for pulls, 'bal' to check bank balance, or 'q' to quit: ")
+
+            if choice == '1x':
+                if self.currency_balance > 0:
+                    item_name, item_rarity = self.pull()
+                    print(f"You obtained: {item_name} (Rarity: {item_rarity})")
+                    self.currency_balance -= 1
+                else:
+                    print("Insufficient coins. Purchase more to continue.")
+            elif choice == '10x':
+                if self.currency_balance >= 10:
+                    self.ten_pull()
+                    self.currency_balance -= 10
+                else:
+                    print("Insufficient coins. Purchase more to continue.")
+            elif choice.lower() == 'buy':
+                amount = int(input("Enter the amount of coins to purchase: "))
+                self.purchase_currency(amount)
+            elif choice.lower() == 'bal':
+                print("Bank balance:", self.bank_balance)
+            elif choice.lower() == 'q':
+                print("Thanks for trying it out!")
+                break
+            else:
+                print("Invalid choice. Please try again.")
+
+    def ten_pull(self):
+        print("Performing a 10 pull...")
+        for _ in range(10):
+            item_name, item_rarity = self.pull()
+            print(f"You obtained: {item_name} (Rarity: {item_rarity})")
+        print("10 pull complete!")
 
 game = GachaGame()
-for _ in range(40):
-    item = game.pull()
-    print("You obtained:", item)
-
-
-
-print("This game will be difficult at first but then possible solutions will be presented to solve the issues at hand.")
-#issues at hand hinting at possible gacha related issues, i.e: debt, gambling, wasteful spending, scamming.
-
-#pick 6 types of gacha games to work on. 3 with janky mechanics and drop rates along with low payout in currency with high bundle prices. 
-#3 with a pity system and good payout in currency regardless of the payout amount.
-#create percentages and pull amounts based on likelyhood of getting said top tier character.
-#probablity rate of 0.2% to 100%
+game.play_game()
